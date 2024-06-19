@@ -77,7 +77,7 @@ uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "                 • SUPREME •                 "
+echo -e "                      • AUTOSCRITP FRE XYR •                             "
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m OS            \e[0m:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[33m IP            \e[0m:  $IPVPS"	
@@ -100,8 +100,8 @@ echo -e   ""
 echo -e   " Press x or [ Ctrl+C ] • To-Exit-Script"
 echo -e   ""
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[33mClient Name \E[0m: $Name"
-echo -e " \e[33mExpired     \E[0m: $Exp2"
+echo -e " \e[33m DEVELOPER \E[0m: XYR-LEFTIME"
+echo -e " \e[33mExpired    \E[0m: $Exp2"
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e   ""
 read -p " Select menu :  "  opt
