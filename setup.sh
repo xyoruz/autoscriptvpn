@@ -106,9 +106,6 @@ sleep 2
 mkdir -p /var/lib/ >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 
-mkdir -p /var/lib/ >/dev/null 2>&1
-echo "IP=" >> /var/lib/ipvps.conf
-
 echo ""
 #wget -q https://raw.githubusercontent.com/xyoruz/autoscriptvpn/main/tools.sh;chmod +x tools.sh;./tools.sh
 #rm tools.sh
