@@ -1,4 +1,29 @@
 #!/bin/bash
+TIMES="10"
+CHATID="6777318112"
+KEY="7077912626:AAHDkEMHuB9UBkNGGNeBv2R1ZI0amQVF11Y"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+ISP=$(cat /root/.isp)
+CITY=$(cat /root/.city)
+TIMEZONE=$(printf '%(%H:%M:%S)T')
+    TEXT="
+<code>────────────────────</code>
+<b>⚡𝗡𝗢𝗧𝗜𝗙 𝗜𝗡𝗦𝗧𝗔𝗟𝗟 𝗦𝗖𝗥𝗜𝗣𝗧⚡</b>
+<code>────────────────────</code>
+<code>User     :</code><code>$username</code>
+<code>ISP      :</code><code>$ISP</code>
+<code>CITY     :</code><code>$CITY</code>
+<code>DATE     :</code><code>$DATE</code>
+<code>Time     :</code><code>$TIMEZONE</code>
+<code>Exp Sc.  :</code><code>$exp</code>
+<code>────────────────────</code>
+<b> XYR VPN STORE SCRIPT  </b>
+<code>────────────────────</code>
+<i>Automatic Notifications From Github</i>
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/XYR020"}]]}' 
+
+    curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+    
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
